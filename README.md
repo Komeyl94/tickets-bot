@@ -42,15 +42,15 @@ In `tickets-bot.py`  adjust the following constants to customize your desired ro
 
 5. **Running the Script**:
 
-On Linux: To run in the background, you can use nohup or screen:
+- On Linux: To run in the background, you can use nohup or screen:
 
-- Using nohup:
+    - Using nohup:
 
     ```bash
     nohup python charter-tickets.py &
     ```
 
-- Using screen:
+    - Using screen:
 
     ```bash
     screen -S tickets-bot
@@ -63,12 +63,12 @@ On Linux: To run in the background, you can use nohup or screen:
 
 - On Windows: To run as a background job, you can use the start command in cmd:
 
-In Command Prompt:
+    - In Command Prompt:
 
     ```bash
     start python charter-tickets.py
     ```
-Alternatively, create a batch script (run.bat):
+    - Alternatively, create a batch script (run.bat):
 
     ```bash
     @echo off
@@ -76,7 +76,7 @@ Alternatively, create a batch script (run.bat):
     exit
     ```
 
-Run run.bat to start the script in a new window.
+    Run run.bat to start the script in a new window.
 
 ## Troubleshooting
 
