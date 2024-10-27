@@ -12,6 +12,8 @@ from aiogram.exceptions import BotBlocked
 # Constants for Bot
 BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"  # Placeholder
 CHAT_ID = "YOUR_CHAT_ID_HERE"  # Placeholder
+DEPARTURE_CITY = "Tehran"
+DESTINATION_CITY = "Istanbul"
 
 # Request headers
 HEADERS = {
@@ -95,6 +97,9 @@ async def scrape_website(html):
         await send_telegram_message(f"Error scraping website: {e}")
         return None
 
+def build_url(departure, destination, date):
+    return f"https://melicharter.com/Ticket-{departure}-{destination}.html?t={date}"
+
 async def monitor_website():
     """Monitors a website at a specified interval."""
     async with aiohttp.ClientSession() as session:
@@ -103,7 +108,7 @@ async def monitor_website():
             all_results = []
             
             for jalali_date in dates:
-                url = f"https://melicharter.com/Ticket-Tehran-istanbul.html?t={jalali_date}"
+                url = build_url(DEPARTURE_CITY, DESTINATION_CITY, jalali_date)
                 try:
                     logging.info(f"Fetching data for date: {jalali_date}")
                     await send_telegram_message(f"Fetching data for date: {jalali_date}")
