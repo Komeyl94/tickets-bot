@@ -20,7 +20,7 @@ This is a Python script designed to monitor selected flight ticket prices from a
 1. **Clone the repository**:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Komeyl94/tickets-bot.git
    cd tickets-bot
    ```
 2. **Install dependencies**:
