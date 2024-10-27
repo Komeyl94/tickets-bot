@@ -47,14 +47,14 @@ In `tickets-bot.py`  adjust the following constants to customize your desired ro
     - Using nohup:
 
     ```bash
-    nohup python charter-tickets.py &
+    nohup python tickets-bot.py &
     ```
 
     - Using screen:
 
     ```bash
     screen -S tickets-bot
-    python charter-tickets.py
+    python tickets-bot.py
 
     # To detach from the screen session, press Ctrl+A followed by D.
     # To reattach, use:
@@ -66,13 +66,13 @@ In `tickets-bot.py`  adjust the following constants to customize your desired ro
     - In Command Prompt:
 
     ```bash
-    start python charter-tickets.py
+    start python tickets-bot.py
     ```
     - Alternatively, create a batch script (run.bat):
 
     ```bash
     @echo off
-    start python charter-tickets.py
+    start python tickets-bot.py
     exit
     ```
 
