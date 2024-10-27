@@ -10,8 +10,8 @@ from aiogram import Bot
 from aiogram.exceptions import BotBlocked
 
 # Constants for Bot
-BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"  # Placeholder
-CHAT_ID = "YOUR_CHAT_ID_HERE"  # Placeholder
+BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"
+CHAT_ID = "YOUR_CHAT_ID_HERE"
 DEPARTURE_CITY = "Tehran"
 DESTINATION_CITY = "Istanbul"
 
