@@ -33,42 +33,48 @@ Using pip, install all the required packages:
 3. **Configure Telegram Bot**:
 Open `tickets-bot.py` and replace `YOUR_BOT_TOKEN_HERE` and `YOUR_CHAT_ID_HERE` with your bot’s token and chat ID.
 
+4. **Customize Departure and Destination**:
+In `tickets-bot.py`  adjust the following constants to customize your desired route:
+    ```bash
+    DEPARTURE_CITY = "Tehran"  # Replace with your departure city
+    DESTINATION_CITY = "Istanbul"  # Replace with your destination city
+    ```
 
-4. **Running the Script**:
+5. **Running the Script**:
 
 On Linux: To run in the background, you can use nohup or screen:
 
 - Using nohup:
 
-```bash
-nohup python charter-tickets.py &
-```
+    ```bash
+    nohup python charter-tickets.py &
+    ```
 
 - Using screen:
 
-```bash
-screen -S tickets-bot
-python charter-tickets.py
+    ```bash
+    screen -S tickets-bot
+    python charter-tickets.py
 
-# To detach from the screen session, press Ctrl+A followed by D.
-# To reattach, use:
-screen -r tickets-bot
-```
+    # To detach from the screen session, press Ctrl+A followed by D.
+    # To reattach, use:
+    screen -r tickets-bot
+    ```
 
 - On Windows: To run as a background job, you can use the start command in cmd:
 
 In Command Prompt:
 
-```bash
-start python charter-tickets.py
-```
+    ```bash
+    start python charter-tickets.py
+    ```
 Alternatively, create a batch script (run.bat):
 
-```bash
-@echo off
-start python charter-tickets.py
-exit
-```
+    ```bash
+    @echo off
+    start python charter-tickets.py
+    exit
+    ```
 
 Run run.bat to start the script in a new window.
 
@@ -80,5 +86,4 @@ Run run.bat to start the script in a new window.
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
-
+This project is licensed under the MIT License.
