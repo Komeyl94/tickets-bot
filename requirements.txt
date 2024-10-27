@@ -1,0 +1,5 @@
+aiohttp
+fake-useragent
+beautifulsoup4
+aiogram
+jdatetime
